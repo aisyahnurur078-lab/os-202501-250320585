@@ -5,9 +5,9 @@ Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : [Aisyah Nurur Rohmah]  
+- **NIM**   : [250320585]  
+- **Kelas** : [1DSRA]
 
 ---
 
@@ -15,7 +15,10 @@ Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 Tuliskan tujuan praktikum minggu ini.  
 Contoh:  
 > Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
-
+> Mahasiswa mampu memecahkan masalah
+> Mahasiswa mampu mengelola sumber daya secara efisien
+> Mahasiswa mampu memahami bagaimana perangkat lunak dan keras berkomunikassi
+> Mahasiswa mampu merancang sistem yang stabil
 ---
 
 ## Dasar Teori
