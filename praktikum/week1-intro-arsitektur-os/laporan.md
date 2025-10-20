@@ -27,10 +27,39 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 ---
 
 ## Langkah Praktikum
-1. Langkah-langkah yang dilakukan.  
-2. Perintah yang dijalankan.  
-3. File dan kode yang dibuat.  
-4. Commit message yang digunakan.
+Lingkungan Pengaturan
+
+Pastikan Linux (Ubuntu/WSL) sudah terinstal.
+Pastikan Git sudah dikonfigurasi dengan benar:
+git config --global user.name "Nama Anda"
+git config --global user.email "email@contoh.com"
+Diskusi Konsep
+
+Baca materi pengantar tentang komponen OS.
+identifikasi komponen yang ada pada Linux/Windows/Android.
+Eksperimen Dasar Jalankan perintah berikut di terminal:
+
+uname -a
+whoami
+lsmod | head
+dmesg | head
+Katat dan analisis modul kernel yang ditampilkan.
+
+Membuat Diagram Arsitektur
+
+Buat diagram hubungan antara User → System Call → Kernel → Hardware.
+Gunakan draw.io atau Mermaid .
+Simpan hasil di:
+praktikum/week1-intro-arsitektur-os/screenshots/diagram-os.png
+Penulisan Laporan
+
+Tuliskan hasil pengamatan, analisis, dan kesimpulan ke dalam laporan.md.
+Tambahkan tangkapan layar hasil terminal ke folder screenshots/.
+Komit & Dorong
+
+git add .
+git commit -m "Minggu 1 - Arsitektur Sistem Operasi dan Kernel"
+git push origin main
 
 ---
 
