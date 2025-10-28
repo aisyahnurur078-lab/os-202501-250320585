@@ -24,7 +24,13 @@ Contoh:
 ## Dasar Teori
 Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 
+🧩 1. Teori Sistem Operasi
 
+Teori ini menjadi dasar utama dalam percobaan arsitektur sistem operasi. Fokusnya adalah bagaimana sistem operasi mengatur sumber daya komputer dan menyediakan layanan bagi pengguna serta apli:
+.Manajemen sumber daya (resource management): CPU, memori, perangka
+.Abstraksi: Sistem operasi menyembunyikan detail perangkat keras melalui antarmuka yang mudah digunakan.
+.Proteksi dan keamanan: Mengatur hak akses antar proses agar tidak saling mengganggu.
+.Konkurensi: Menangani proses yang berjalan bersamaan (multitasking, multiprogramming).
 
 ## Langkah Praktikum
 Lingkungan Pengaturan
