@@ -164,8 +164,10 @@ Contoh OS dengan arsitektur mikrokernel:
 -Mach (digunakan pada macOS dan iOS)
 ## Refleksi Diri
 Tuliskan secara singkat:
-- Apa bagian yang paling menantang minggu ini?  
-- Bagaimana cara Anda mengatasinya?  
+- Apa bagian yang paling menantang minggu ini?
+- menjadi mahasiswa baru di universitas putra bangsa dan langsung mendapatkan banyak tugas 
+- Bagaimana cara Anda mengatasinya?
+- mengatasinya dengan menjakani dengan lapang dada,jiga saat mengerjakan tugas saya tidak paham saya akan bertanya kpn teman.
 
 ---
 
