@@ -120,15 +120,48 @@ Secara keseluruhan, percobaan ini memperlihatkan bahwa arsitektur kernel dan mek
 
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+1. [tiga persamaan fungsi utama sistem operasi.] 
+   **Jawaban:**
+  a. Manajemen Sumber Daya (Resource Management)
+OS mengatur dan mengelola seluruh sumber daya komputer seperti CPU, memori, perangkat penyimpanan, dan perangkat input/output agar dapat digunakan secara efisien oleh berbagai program dan pengguna.
+Contohnya: mengatur giliran proses yang memakai CPU (CPU scheduling), mengalokasikan memori untuk program yang berjalan, dan mengatur akses ke hard disk.
+b. Manajemen File dan Sistem I/O (File and Input/Output Management)
+OS menyediakan cara untuk menyimpan, mengatur, membaca, menulis, dan menghapus file, serta mengontrol komunikasi antara perangkat keras (hardware) dan perangkat lunak (software).
+Contohnya: mengatur sistem berkas (file system), driver perangkat, dan operasi seperti membuka atau menutup file.
+c. Manajemen Proses dan Pengguna (Process and User Management)
+OS bertanggung jawab untuk membuat, menjalankan, menghentikan, dan mengatur komunikasi antar proses. Selain itu, OS juga menangani keamanan dan hak akses pengguna.
+Contohnya: mengatur multitasking (beberapa program berjalan bersamaan) dan memastikan tiap pengguna memiliki hak akses sesuai perannya.
 
----
-
+ 3. [menjelaskan perbedaan antara mode kernel dan mode pengguna ]
+   **Jawaban:**
+1. Mode Kernel (Kernel Mode) adalah mode istimewa di mana sistem operasi memiliki akses penuh ke seluruh sumber daya komputer, termasuk perangkat keras.
+Ciri-ciri:
+-Dapat menjalankan instruksi sistem yang kritis (misalnya mengakses memori, CPU, dan perangkat keras).
+-Jika terjadi kesalahan di mode kernel, seluruh sistem bisa crash (gagal total).
+-Digunakan oleh bagian inti sistem operasi (kernel) dan driver perangkat.
+Contoh:
+Ketika OS mengatur proses, mengelola memori, atau mengakses disk langsung, semua berjalan di mode kernel.
+ 2. Mode Pengguna (User Mode) adalah mode di mana program aplikasi biasa berjalan dengan akses terbatas terhadap sumber daya sistem.
+Ciri-ciri:
+-Tidak dapat langsung mengakses perangkat keras atau memori inti.
+-Jika terjadi kesalahan, hanya program itu saja yang berhenti, bukan seluruh sistem.
+-Program yang butuh akses kernel harus meminta lewat system call.
+Contoh:
+Aplikasi seperti Microsoft Word, browser, atau game berjalan di mode pengguna dan memanggil layanan OS lewat system call (misalnya untuk menyimpan foto 
+4. [Menunjuk contoh OS dengan arsitektur monolitik dan mikrokernel ]
+   **Jawaban:**  
+Berikut contoh sistem operasi berdasarkan jenis arsitekturnya:
+1. Arsitektur Monolitik adalah jenis sistem operasi di mana seluruh komponen inti (seperti manajemen memori, proses, file system, dan driver perangkat) dijalankan dalam satu ruang kernel. Semua bagian kernel saling terhubung langsung tanpa pemisahan modul besar.
+Contoh OS dengan arsitektur monolitik:
+-MS-DOS
+-UNIX
+-Linux (seperti Ubuntu, Debian, Fedora
+ 2. Arsitektur mikrokernel
+Pada arsitektur mikrokernel, hanya fungsi-fungsi dasar sistem operasi yang dijalankan di kernel (seperti komunikasi antar proses dan manajemen memori sederhana). Komponen lain seperti driver, file system, dan manajemen perangkat dijalankan di mode pengguna.
+Contoh OS dengan arsitektur mikrokernel:
+-MINIX
+-QNX
+-Mach (digunakan pada macOS dan iOS)
 ## Refleksi Diri
 Tuliskan secara singkat:
 - Apa bagian yang paling menantang minggu ini?  
