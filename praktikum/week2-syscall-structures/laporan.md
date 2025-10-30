@@ -1,13 +1,13 @@
 
-# Laporan Praktikum Minggu [I]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
+# Laporan Praktikum Minggu [II]
+Topik: [Struktur System Operasi dan fungsi kernel]
 
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : [Aisyah Nurur Rohmah]  
+- **NIM**   : [250320585]  
+- **Kelas** : [1DSRA]
 
 ---
 
