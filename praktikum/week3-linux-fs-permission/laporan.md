@@ -68,11 +68,7 @@ Percobaan bisa melibatkan perintah chmod, chown, dan sudo.
 Kesimpulan Teori
 Percobaan Linux didasari oleh konsep arsitektur sistem operasi, kernel, manajemen sumber daya, dan komunikasi antara user–kernel. Dengan memahami teori ini, pengguna dapat mengenal cara kerja internal Linux serta mengoperasikan sistem secara efisien melalui perintah dan pengelolaan proses.
 
-## Langkah Praktikum
-1. Langkah-langkah yang dilakukan.  
-2. Perintah yang dijalankan.  
-3. File dan kode yang dibuat.  
-4. Commit message yang digunakan.
+## Langkah Praktikum.
 1.Lingkungan Pengaturan
 Gunakan Linux (Ubuntu/WSL).
 Pastikan folder kerja berada di dalam direktori repositori Git praktikum:
@@ -106,11 +102,6 @@ Ambil tangkapan layar hasil terminal dan simpan di:
 praktikum/week3-linux-fs-permission/screenshots/
 Tambahkan hasil analisis pada laporan.md.
 Komit & Dorong
-
-git add .
-git commit -m "Minggu 3 - Linux File System & Permission"
-git push origin main
----
 
 ## Kode / Perintah
 Tuliskan potongan kode atau perintah utama:
