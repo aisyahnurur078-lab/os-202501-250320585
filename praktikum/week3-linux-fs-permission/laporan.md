@@ -1,5 +1,5 @@
 
-# Laporan Praktikum Minggu [X]
+# Laporan Praktikum Minggu [III]
 Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 
 ---
@@ -22,9 +22,51 @@ Tuliskan tujuan praktikum minggu ini:
 
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
-
----
+Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan
+1. Konsep Sistem Operasi
+Sistem operasi (Operating System/OS) adalah perangkat lunak yang berfungsi sebagai penghubung antara pengguna (user) dan perangkat keras komputer (hardware). Sistem operasi mengatur seluruh aktivitas komputer seperti pengelolaan proses, memori, file, perangkat keras, serta komunikasi antar sistem.
+Linux merupakan salah satu sistem operasi yang termasuk dalam keluarga UNIX-like, yang bersifat open source dan multiuser-multitasking, artinya dapat digunakan oleh banyak pengguna secara bersamaan dan dapat menjalankan banyak proses pada waktu yang sama.
+2. Kernel Linux
+Kernel merupakan inti dari sistem operasi. Ia bertugas mengontrol semua sumber daya sistem, termasuk CPU, memori, dan perangkat keras lainnya.
+Fungsi utama kernel meliputi:
+Manajemen proses: mengatur proses yang sedang berjalan (menjadwalkan, menghentikan, dan melanjutkan proses).
+Manajemen memori: mengalokasikan dan mengontrol penggunaan memori untuk setiap proses.
+Manajemen sistem file: mengatur penyimpanan, pembuatan, dan penghapusan file.
+Manajemen perangkat: mengatur komunikasi antara perangkat keras dan perangkat lunak.
+Manajemen keamanan: mengatur hak akses pengguna terhadap sistem.
+3. Shell
+Shell adalah antarmuka antara pengguna dan sistem operasi yang menerima perintah (command) dari pengguna dan meneruskannya ke kernel untuk dieksekusi.
+Beberapa jenis shell di Linux:
+Bash (Bourne Again Shell)
+Zsh (Z Shell)
+Ksh (Korn ).
+4. Struktur Sistem File Linux
+Sistem file Linux memiliki struktur hierarki tunggal yang dimulai dari root (/). Semua file dan direktori berada di bawah root.
+Contoh struktur:
+/
+├── bin     → berisi perintah dasar sistem
+├── etc     → berisi file konfigurasi sistem
+├── home    → berisi direktori pengguna
+├── dev     → berisi file perangkat
+├── tmp     → file sementara
+├── var     → file log dan variabel
+5. Manajemen Proses
+Linux adalah multitasking OS, yang berarti dapat menjalankan banyak proses sekaligus.
+Setiap proses memiliki Process ID (PID) dan dikontrol oleh kernel melalui scheduler.
+Perintah umum:
+ps → melihat daftar proses
+top → memantau proses aktif
+kill → menghentikan proses
+6. Manajemen Pengguna dan Hak Akses
+Linux memiliki sistem user management yang kuat, dengan pembagian hak akses:
+Root (administrator)
+User biasa
+Hak akses file dibagi menjadi:
+r (read) → membaca file
+w (write) → menulis/me (execute) → menjalankan program
+Percobaan bisa melibatkan perintah chmod, chown, dan sudo.
+Kesimpulan Teori
+Percobaan Linux didasari oleh konsep arsitektur sistem operasi, kernel, manajemen sumber daya, dan komunikasi antara user–kernel. Dengan memahami teori ini, pengguna dapat mengenal cara kerja internal Linux serta mengoperasikan sistem secara efisien melalui perintah dan pengelolaan proses.
 
 ## Langkah Praktikum
 1. Langkah-langkah yang dilakukan.  
