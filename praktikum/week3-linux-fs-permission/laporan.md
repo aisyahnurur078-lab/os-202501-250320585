@@ -107,13 +107,15 @@ Komit & Dorong
 git add .
 git commit -m "Minggu 3 - Linux File System & Permission"
 git push origin main
-
 pwd
 ls -l
 cd /tmp
 ls -a
-
 cat /etc/passwd | head -n 5
+echo "Hello <NAME><NIM>" > percobaan.txt
+ls -l percobaan.txt
+chmod 600 percobaan.txt
+ls -l percobaan.txt
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
