@@ -116,6 +116,8 @@ echo "Hello <NAME><NIM>" > percobaan.txt
 ls -l percobaan.txt
 chmod 600 percobaan.txt
 ls -l percobaan.txt
+sudo chown root percobaan.txt
+ls -l percobaan.txt
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
