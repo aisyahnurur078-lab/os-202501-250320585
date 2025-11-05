@@ -1,8 +1,6 @@
 ini
 # Laporan Praktikum Minggu [III]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
-
----
+Memenuhi file dan izin linux
 
 ## Identitas
 - **Nama**  : [Aisyah Nurur Rohmah]  
@@ -104,9 +102,7 @@ Tambahkan hasil analisis pada laporan.md.
 Komit & Dorong
 
 ## Kode / Perintah
-git add .
-git commit -m "Minggu 3 - Linux File System & Permission"
-git push origin main
+
 pwd
 ls -l
 cd /tmp
@@ -118,7 +114,10 @@ chmod 600 percobaan.txt
 ls -l percobaan.txt
 sudo chown root percobaan.txt
 ls -l percobaan.txt
-
+praktikum/week3-linux-fs-permission/screenshots/
+git add .
+git commit -m "Minggu 3 - Linux File System & Permission"
+git push origin main
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
 ![Screenshot hasil](screenshots/example.png)
