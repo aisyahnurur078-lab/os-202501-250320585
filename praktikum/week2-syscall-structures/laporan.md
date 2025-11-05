@@ -71,13 +71,14 @@ git add .
 git commit -m "Minggu 2 - Struktur System Call dan Kernel Interaction"
 git push origin main
 
-Dokumentasikan hasil eksperimen strace dan dmesg dalam bentuk tabel observasi.
-Buat diagram alur system call dari aplikasi → kernel → hardware → kembali ke aplikasi.
-Tulis analisis 400–500 kata tentang:
-Mengapa system call penting untuk keamanan OS?
-Bagaimana OS memastikan transisi user–kernel berjalan aman?
-Sebutkan contoh system call yang sering digunakan di Linux.
-Simpan semua hasil di:
+##Tugas dan Kuis
+1.Dokumentasikan hasil eksperimen strace dan dmesg dalam bentuk tabel observasi.
+2.Buat diagram alur system call dari aplikasi → kernel → hardware → kembali ke aplikasi.
+3.Tulis analisis 400–500 kata tentang:
+     -Mengapa system call penting untuk keamanan OS?
+     -Bagaimana OS memastikan transisi user–kernel berjalan aman?
+     -Sebutkan contoh system call yang sering digunakan di Linux.
+4.Simpan semua hasil di:
 praktikum/week2-syscall-structure/
 ---
 
