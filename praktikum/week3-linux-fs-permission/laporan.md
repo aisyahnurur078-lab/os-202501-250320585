@@ -113,6 +113,8 @@ ls -l
 cd /tmp
 ls -a
 
+cat /etc/passwd | head -n 5
+
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
 ![Screenshot hasil](screenshots/example.png)
