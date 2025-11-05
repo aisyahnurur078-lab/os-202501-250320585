@@ -80,7 +80,80 @@ git push origin main
      -Sebutkan contoh system call yang sering digunakan di Linux.
 4.Simpan semua hasil di:
 praktikum/week2-syscall-structure/
----
+
+1. Tabel Observasi Hasil Eksperimen strace dan dmesg
+
+Perintah / Aksi	Hasil / Cuplikan Output	Makna Observasi
+
+strace ls	`openat(AT_FDCWD, ".", O_RDONLY	O_NONBLOCK
+strace cat file.txt	read(3, "Isi file...", 1024) = 12 → write(1, "Isi file...", 12)	System call read() membaca isi file dari disk, lalu write() menulis output ke terminal.
+strace echo "Halo"	write(1, "Halo\n", 5)	Perintah echo menggunakan system call write() untuk menampilkan teks ke layar.
+`dmesg	tail`	[ 120.45321] usb 1-1: new high-speed USB device number 5 using xhci_hcd
+`dmesg	grep error`	[ 78.12345] ext4-fs error (device sda1): ext4_find_entry:1456
+
+2. Diagram Alur System Call
+
+Berikut diagram alur sederhana dari aplikasi hingga hardware dan kembali:
+
++--------------------------+
+|     Aplikasi (User)     |
+|  Contoh: 'cat file.txt' |
++------------+-------------+
+             |
+             | 1. System Call (read)
+             v
++--------------------------+
+|   Kernel Mode (OS)       |
+| - Mengecek izin akses    |
+| - Mengatur resource I/O  |
+| - Panggil driver terkait |
++------------+-------------+
+             |
+             | 2. Akses Hardware
+             v
++--------------------------+
+|   Hardware (Disk, CPU)   |
+| - Baca/ambil data file   |
++------------+-------------+
+             |
+             | 3. Kembali ke Kernel
+             v
++--------------------------+
+|   Kernel Mode (OS)       |
+| - Menyalin hasil ke memori |
++------------+-------------+
+             |
+             | 4. Kembali ke Aplikasi
+             v
++--------------------------+
+|   Aplikasi (User Space)  |
+| - Menampilkan hasil ke layar |
++--------------------------+
+
+3. Analisis (±450 kata)
+
+System call adalah mekanisme penting yang memungkinkan aplikasi di user space berkomunikasi dengan kernel space tanpa langsung mengakses perangkat keras. Mekanisme ini menjadi jembatan antara program pengguna dan sumber daya sistem operasi seperti memori, file, dan perangkat I/O. Tanpa system call, aplikasi tidak dapat berinteraksi dengan sistem karena kernel beroperasi di mode yang terlindungi.
+
+a. Pentingnya System Call untuk Keamanan OS
+
+System call berperan besar dalam menjaga keamanan sistem operasi. Kernel melindungi akses langsung ke perangkat keras agar aplikasi pengguna tidak bisa merusak atau mengganggu sistem. Semua interaksi dengan hardware harus melalui system call yang telah diawasi.
+Misalnya, ketika program mencoba membuka file menggunakan open(), kernel akan memeriksa apakah pengguna memiliki izin (permission) untuk mengakses file tersebut. Jika tidak, kernel akan menolak permintaan dan mengembalikan pesan error. Dengan demikian, system call mencegah aplikasi berperilaku berbahaya, menjaga integritas data, serta melindungi sistem dari eksploitasi dan crash.
+
+b. Keamanan Transisi dari Mode Pengguna ke Mode Kernel
+
+Transisi antara user mode dan kernel mode dilakukan secara hati-hati menggunakan mekanisme trap atau interrupt. Saat system call dipanggil, prosesor beralih dari ring 3 (user mode) ke ring 0 (kernel mode). OS memastikan proses ini aman dengan:
+Menyediakan system call table berisi fungsi kernel yang sah.
+Melakukan validasi argumen agar tidak terjadi akses memori ilegal.
+Menjaga isolasi antar proses sehingga satu aplikasi tidak dapat mengubah data proses lain. Setelah kernel menyelesaikan tugasnya, kontrol dikembalikan ke user mode dengan aman. Proses ini mencegah pengguna mengambil alih kontrol kernel atau mengakses memori yang dilindungi.
+
+c. Contoh System Call Umum di Linux
+Beberapa system call yang sering digunakan antara lain:
+open(), read(), write(), dan close() → untuk operasi file.
+fork() dan exec() → untuk membuat dan menjalankan proses baru.
+wait() → menunggu proses anak selesai.
+exit() → mengakhiri proses.
+socket() dan connect() → komunikasi jaringan. System call ini menjadi dasar bagi hampir semua program Linux — mulai
+dari terminal, server web, hingga browser — untuk berinteraksi dengan kernel dan perangkat keras dengan cara yang aman dan terstandarisasi.
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
