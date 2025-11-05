@@ -63,11 +63,7 @@ git push origin main
 
 
 ## Kode / Perintah
-Tuliskan potongan kode atau perintah utama:
-```bash
-uname -a
-lsmod | head
-dmesg | head
+strace ls
 ```
 Dokumentasikan hasil eksperimen strace dan dmesg dalam bentuk tabel observasi.
 Buat diagram alur system call dari aplikasi → kernel → hardware → kembali ke aplikasi.
