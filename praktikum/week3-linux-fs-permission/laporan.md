@@ -108,6 +108,10 @@ git add .
 git commit -m "Minggu 3 - Linux File System & Permission"
 git push origin main
 
+pwd
+ls -l
+cd /tmp
+ls -a
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
