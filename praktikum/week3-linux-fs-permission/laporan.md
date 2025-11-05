@@ -160,15 +160,33 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 
 3. Perbedaan arsitektur OS (Linux dan Windows) memengaruhi cara kernel bekerja — Linux yang bersifat monolitik lebih terbuka dan cepat, sedangkan Windows dengan pendekatan microkernel lebih terstruktur dan aman.
 
-## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+#Quis
+1. Fungsi dari perintah chmod
+Perintah chmod (change mode) digunakan untuk mengubah izin (permission) akses file atau direktori di sistem operasi Linux/Unix.
+Dengan chmod, kita bisa menentukan siapa saja yang boleh:
+membaca (read - r),
+menulis/mengubah (write - w), dan
+menjalankan (execute - x) file atau folder.
+Contoh:
+chmod 755 script.sh
+Artinya: pemilik bisa baca, tulis, dan jalankan; sedangkan pengguna lain hanya bisa baca dan jalankan.
 
----
+2. Arti dari kode izin rwxr-xr--
+Kode ini menunjukkan hak akses untuk tiga kelompok pengguna:
+Bagian	Pengguna	Hak Akses	Arti
+rwx	Pemilik (owner)	read, write, execute	Pemilik bisa membaca, mengubah, dan menjalankan file
+r-x	Grup (group)	read, execute	Anggota grup hanya bisa membaca dan menjalankan file
+r--	Lainnya (others)	read only	Pengguna lain hanya bisa membaca file
+Jadi, rwxr-xr-- berarti:
+> Pemilik penuh akses, grup hanya bisa baca/jalankan, dan orang lain hanya bisa membaca.
+
+3. Perbedaan antara chown dan chmod
+Perintah	Fungsi Utama	Contoh Penggunaan
+chmod	Mengubah izin akses (read/write/execute) pada file atau folder.	chmod 644 file.t
+chown	Mengubah kepemilikan (owner dan group) dari file atau folder.	chown user1:group1 file.txt
+Kesimpulan:
+chmod → mengatur apa yang bisa dilakukan pengguna.
+chown → mengatur siapa pemilik file atau direktori.
 
 ## Refleksi Diri
 Tuliskan secara singkat:
