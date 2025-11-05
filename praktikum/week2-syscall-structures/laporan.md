@@ -139,12 +139,61 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+
+1. Fungsi utama system call dalam sistem operasi
+
+Fungsi utama system call adalah sebagai jembatan antara program pengguna (user space) dan kernel sistem operasi (kernel space).
+System call memungkinkan program untuk meminta layanan dari kernel, seperti:
+
+Membaca/menulis berkas (file I/O)
+
+Mengalokasikan memori
+
+Membuat atau menghapus proses
+
+Mengatur komunikasi antar-proses
+
+
+Dengan kata lain, system call menyediakan antarmuka resmi untuk berinteraksi dengan sumber daya perangkat keras melalui kernel, sehingga program tidak perlu (dan tidak diizinkan) mengakses perangkat keras secara langsung.
+
+
+---
+
+2. Empat kategori system call yang umum digunakan
+
+System call umumnya dibagi ke dalam empat kategori utama:
+
+Kategori	Fungsi Utama	Contoh System Call di Linux
+
+1. Process Control	Mengatur pembuatan, penghentian, dan pengelolaan proses	fork(), exec(), exit(), wait()
+2. File Management	Mengelola berkas dan direktori	open(), read(), write(), close()
+3. Device Management	Mengontrol dan berinteraksi dengan perangkat I/O	ioctl(), read(), write()
+4. Information Maintenance & Communication	Menyediakan informasi sistem dan komunikasi antar-proses	getpid(), alarm(), pipe(), shmget()
+
+
+
+---
+
+3. Mengapa panggilan sistem tidak bisa dipanggil langsung oleh pengguna program
+
+System call tidak dapat dipanggil langsung oleh program pengguna karena alasan keamanan dan stabilitas sistem operasi.
+
+Penjelasannya:
+
+Perlindungan kernel: Kernel memiliki hak akses tertinggi (mode kernel), sedangkan aplikasi berjalan di mode pengguna (user mode). Jika pengguna bisa langsung mengakses kernel, maka ia bisa merusak sistem atau mengambil alih kontrol penuh.
+
+Kontrol akses: System call memastikan bahwa setiap permintaan (misalnya akses file atau perangkat) diverifikasi dan dibatasi sesuai izin pengguna.
+
+Stabilitas sistem: Dengan perantara system call, OS dapat mencegah crash atau konflik antar-proses.
+
+
+Jadi, semua interaksi antara aplikasi dan kernel harus melalui mekanisme system call agar sistem tetap aman dan terkontrol.
+
+
+---
+
+Apakah kamu ingin saya tambahkan diagram sederhana alur aplikasi → system call → kernel → hardware → kembali ke aplikasi untuk memperjelas poin ini?
+
 
 ---
 
