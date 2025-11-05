@@ -22,15 +22,18 @@ Tuliskan tujuan praktikum minggu ini.
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 
----
+1. Sistem operasi (OS) berfungsi sebagai penghubung antara pengguna dan perangkat keras komputer, mengelola sumber daya seperti CPU, memori, dan perangkat I/O.
+
+2. Kernel adalah inti dari sistem operasi yang beroperasi di kernel mode dan bertanggung jawab atas eksekusi system call, manajemen proses, memori, serta komunikasi antar-perangkat.
+
+3. System call merupakan mekanisme utama yang digunakan program pengguna (user mode) untuk meminta layanan dari kernel, seperti membaca file, membuat proses baru, atau mengakses perangkat.
+
+4. Pemisahan mode pengguna dan mode kernel bertujuan menjaga keamanan dan stabilitas sistem agar pengguna tidak dapat mengakses sumber daya kritis secara langsung.
+
+5. Alat bantu seperti strace dan dmesg digunakan untuk menganalisis interaksi antara aplikasi dan kernel, membantu memahami bagaimana system call bekerja selama eksekusi program.
 
 ## Langkah Praktikum
-1. Langkah-langkah yang dilakukan.  
-2. Perintah yang dijalankan.  
-3. File dan kode yang dibuat.  
-4. Commit message yang digunakan.
 
 1.Setup Environment
 Gunakan Linux (Ubuntu/WSL).
