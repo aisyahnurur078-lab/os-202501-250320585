@@ -1,4 +1,4 @@
-
+ini
 # Laporan Praktikum Minggu [III]
 Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 
@@ -104,14 +104,10 @@ Tambahkan hasil analisis pada laporan.md.
 Komit & Dorong
 
 ## Kode / Perintah
-Tuliskan potongan kode atau perintah utama:
-```bash
-uname -a
-lsmod | head
-dmesg | head
-```
+git add .
+git commit -m "Minggu 3 - Linux File System & Permission"
+git push origin main
 
----
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
