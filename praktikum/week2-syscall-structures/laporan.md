@@ -64,7 +64,8 @@ git push origin main
 
 ## Kode / Perintah
 strace ls
-```
+strace -e trace=open,read,write,close cat /etc/passwd
+
 Dokumentasikan hasil eksperimen strace dan dmesg dalam bentuk tabel observasi.
 Buat diagram alur system call dari aplikasi → kernel → hardware → kembali ke aplikasi.
 Tulis analisis 400–500 kata tentang:
