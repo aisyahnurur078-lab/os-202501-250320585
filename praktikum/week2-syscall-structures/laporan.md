@@ -134,9 +134,14 @@ Sertakan screenshot hasil percobaan atau diagram:
 ---
 
 ## Kesimpulan
-Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 
----
+1. System call berperan penting sebagai penghubung antara aplikasi dan kernel, memungkinkan program pengguna mengakses layanan inti sistem operasi secara aman tanpa langsung berinteraksi dengan perangkat keras.
+
+
+2. Keamanan dan stabilitas sistem dijaga melalui pemisahan mode pengguna dan mode kernel, sehingga hanya kernel yang memiliki hak penuh untuk mengelola sumber daya sistem.
+
+
+3. Melalui observasi menggunakan perintah seperti strace dan dmesg, dapat dipahami bagaimana proses komunikasi terjadi antara aplikasi, kernel, dan perangkat keras dalam menjalankan operasi sistem.
 
 ## Quiz
 
@@ -188,14 +193,6 @@ Stabilitas sistem: Dengan perantara system call, OS dapat mencegah crash atau ko
 
 
 Jadi, semua interaksi antara aplikasi dan kernel harus melalui mekanisme system call agar sistem tetap aman dan terkontrol.
-
-
----
-
-Apakah kamu ingin saya tambahkan diagram sederhana alur aplikasi → system call → kernel → hardware → kembali ke aplikasi untuk memperjelas poin ini?
-
-
----
 
 ## Refleksi Diri
 Tuliskan secara singkat:
