@@ -67,6 +67,9 @@ strace ls
 strace -e trace=open,read,write,close cat /etc/passwd
 dmesg | tail -n 10
 praktikum/week2-syscall-structure/screenshots/syscall-diagram.png
+git add .
+git commit -m "Minggu 2 - Struktur System Call dan Kernel Interaction"
+git push origin main
 
 Dokumentasikan hasil eksperimen strace dan dmesg dalam bentuk tabel observasi.
 Buat diagram alur system call dari aplikasi → kernel → hardware → kembali ke aplikasi.
