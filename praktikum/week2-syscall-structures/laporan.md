@@ -91,46 +91,7 @@ strace echo "Halo"	write(1, "Halo\n", 5)	Perintah echo menggunakan system call w
 `dmesg	tail`	[ 120.45321] usb 1-1: new high-speed USB device number 5 using xhci_hcd
 `dmesg	grep error`	[ 78.12345] ext4-fs error (device sda1): ext4_find_entry:1456
 
-2. Diagram Alur System Call
-
-Berikut diagram alur sederhana dari aplikasi hingga hardware dan kembali:
-
-+--------------------------+
-|     Aplikasi (User)     |
-|  Contoh: 'cat file.txt' |
-+------------+-------------+
-             |
-             | 1. System Call (read)
-             v
-+--------------------------+
-|   Kernel Mode (OS)       |
-| - Mengecek izin akses    |
-| - Mengatur resource I/O  |
-| - Panggil driver terkait |
-+------------+-------------+
-             |
-             | 2. Akses Hardware
-             v
-+--------------------------+
-|   Hardware (Disk, CPU)   |
-| - Baca/ambil data file   |
-+------------+-------------+
-             |
-             | 3. Kembali ke Kernel
-             v
-+--------------------------+
-|   Kernel Mode (OS)       |
-| - Menyalin hasil ke memori |
-+------------+-------------+
-             |
-             | 4. Kembali ke Aplikasi
-             v
-+--------------------------+
-|   Aplikasi (User Space)  |
-| - Menampilkan hasil ke layar |
-+--------------------------+
-
-3. Analisis (±450 kata)
+2. Analisis (±450 kata)
 
 System call adalah mekanisme penting yang memungkinkan aplikasi di user space berkomunikasi dengan kernel space tanpa langsung mengakses perangkat keras. Mekanisme ini menjadi jembatan antara program pengguna dan sumber daya sistem operasi seperti memori, file, dan perangkat I/O. Tanpa system call, aplikasi tidak dapat berinteraksi dengan sistem karena kernel beroperasi di mode yang terlindungi.
 
