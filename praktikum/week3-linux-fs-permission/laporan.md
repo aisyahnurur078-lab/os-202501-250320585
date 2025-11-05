@@ -1,6 +1,6 @@
 ini
 # Laporan Praktikum Minggu [III]
-Memenuhi file dan izin linux
+Manajemen file dan izin linux
 
 ## Identitas
 - **Nama**  : [Aisyah Nurur Rohmah]  
@@ -102,7 +102,7 @@ Tambahkan hasil analisis pada laporan.md.
 Komit & Dorong
 
 ## Kode / Perintah
-
+praktikum/week3-linux-fs-permission/
 pwd
 ls -l
 cd /tmp
