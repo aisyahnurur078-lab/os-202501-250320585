@@ -125,16 +125,40 @@ Sertakan screenshot hasil percobaan atau diagram:
 ---
 
 ## Analisis
-- Jelaskan makna hasil percobaan.  
-- Hubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS).  
-- Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?  
+1. Menjelaskan makna hasil percobaan
+Hasil percobaan menunjukkan bagaimana sistem operasi (OS) bekerja dalam mengatur komunikasi antara aplikasi pengguna (user space) dan kernel (kernel space).
+Ketika program dijalankan, instruksi biasa diproses oleh CPU dalam mode pengguna, tetapi jika program membutuhkan layanan sistem (misalnya membaca file, mencetak data, atau mengakses perangkat keras), maka terjadi system call yang memindahkan kontrol ke mode kernel.
+Maknanya, hasil percobaan memperlihatkan bahwa kernel bertanggung jawab penuh atas pengelolaan sumber daya dan menjaga agar pengguna tidak mengakses hardware secara langsung.
 
----
+2. Menghubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS)
+>Fungsi Kernel:
+-Kernel berfungsi sebagai inti dari sistem operasi yang mengatur:
+-Manajemen proses (menjalankan dan menghentikan program),
+-Manajemen memori (alokasi RAM),
+-Manajemen perangkat keras (I/O, disk, printer, dll).
+-Hasil percobaan biasanya memperlihatkan bahwa tanpa kernel, proses tidak dapat berinteraksi dengan hardware secara aman.
+
+>System Call:
+System call adalah “jembatan” antara program pengguna dan kernel.
+Misalnya, pada percobaan menjalankan perintah seperti ls, open(), atau write(), program tersebut tidak langsung mengakses disk tetapi memanggil system call yang diteruskan ke kernel.
+Ini membuktikan teori bahwa setiap akses ke sumber daya dilakukan melalui system call, bukan langsung dari user mode.
+
+>Arsitektur OS:
+Jika hasil menunjukkan bahwa semua layanan dijalankan dalam satu ruang (monolitik), berarti OS menggunakan arsitektur monolitik seperti Linux.
+Sedangkan jika layanan inti dipisah ke proses kecil (microkernel), hasil menunjukkan OS seperti Windows NT atau Minix.
+Jadi hasil percobaan memperkuat teori bahwa arsitektur menentukan cara kernel menangani sistem call dan komponen sistem.
+
+3. Perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)
+Perbedaan hasil antara Linux dan Windows terletak pada kinerja, stabilitas, fleksibilitas, dan cara mengelola sistem file. Linux umumnya lebih unggul dalam hal kecepatan dan stabilitas, terutama pada perangkat keras lama, karena sifatnya yang open-source dan modular, sedangkan Windows lebih mengutamakan kemudahan penggunaan melalui antarmuka grafis (GUI) dan ekosistem aplikasi yang lebih terintegrasi.
 
 ## Kesimpulan
 Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 
----
+1. Kernel berperan sebagai inti sistem operasi yang mengatur seluruh aktivitas perangkat keras dan perangkat lunak agar berjalan terkoordinasi dengan aman dan efisien.
+
+2. System call menjadi penghubung antara program pengguna dan kernel, memungkinkan aplikasi mengakses layanan sistem tanpa berinteraksi langsung dengan perangkat keras.
+
+3. Perbedaan arsitektur OS (Linux dan Windows) memengaruhi cara kernel bekerja — Linux yang bersifat monolitik lebih terbuka dan cepat, sedangkan Windows dengan pendekatan microkernel lebih terstruktur dan aman.
 
 ## Quiz
 1. [Pertanyaan 1]  
