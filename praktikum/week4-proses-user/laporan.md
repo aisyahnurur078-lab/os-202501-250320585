@@ -45,26 +45,31 @@ Secara ringkas, dasar teori untuk percobaan proses user adalah pemahaman mendala
 ---
 ## Langkah Praktikum
 1.Setup Environment
+GLingkungan Pengaturan
+
 Gunakan Linux (Ubuntu/WSL).
 Pastikan Anda sudah login sebagai user non-root.
 Siapkan folder kerja:
 praktikum/week4-proses-user/
-2.Eksperimen 1 – Identitas User Jalankan perintah berikut:
+2.Eksperimen 1 – Identitas Pengguna Jalankan perintah berikut:
+
 whoami
 id
 groups
-Jelaskan setiap output dan fungsinya.
-Buat user baru (jika memiliki izin sudo):
+Menjelaskan setiap keluaran dan fungsinya.
+Buat pengguna baru (jika memiliki izin sudo):
 sudo adduser praktikan
 sudo passwd praktikan
 Uji login ke user baru.
 3.Eksperimen 2 – Monitoring Proses Jalankan:
+
 ps aux | head -10
 top -n 1
-Jelaskan kolom penting seperti PID, USER, %CPU, %MEM, COMMAND.
-Simpan tangkapan layar top ke:
+menjelaskan kolom penting seperti PID, USER, %CPU, %MEM, COMMAND.
+Simpan tangkapan layar topke:
 praktikum/week4-proses-user/screenshots/top.png
 4.Eksperimen 3 – Kontrol Proses
+
 Jalankan program latar belakang:
 sleep 1000 &
 ps aux | grep sleep
@@ -73,10 +78,12 @@ Hentikan proses:
 kill <PID>
 Pastikan proses telah berhenti dengan ps aux | grep sleep.
 5.Eksperimen 4 – Analisis Hierarki Proses Jalankan:
+
 pstree -p | head -20
-6.Amati hierarki proses dan identifikasi proses induk (init/systemd).
+Amati proses hierarki dan identifikasi proses induk ( init/ systemd).
 Catat hasilnya dalam laporan.
-Commit & Push
+6.Komit & Dorong
+
 git add .
 git commit -m "Minggu 4 - Manajemen Proses & User"
 git push origin main
