@@ -1,6 +1,6 @@
 
 # Laporan Praktikum Minggu [II]
-Topik: [Struktur System Operasi dan fungsi kernel]
+Topik: [Struktur System Call dan fungsi kernel]
 
 ---
 
