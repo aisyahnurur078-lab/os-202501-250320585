@@ -82,7 +82,6 @@ pstree -p | head -20
 6.Amati hierarki proses dan identifikasi proses induk (init/systemd).
 Catat hasilnya dalam laporan.
 Commit & Push
-
 git add .
 git commit -m "Minggu 4 - Manajemen Proses & User"
 git push origin main
