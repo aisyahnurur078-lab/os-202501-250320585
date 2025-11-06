@@ -14,7 +14,6 @@ Mahasiswa akan memahami bagaimana sistem operasi:
 Eksperimen dilakukan melalui penggunaan perintah dasar seperti `ps`, `top`, `kill`, `adduser`, `passwd`, `id`, dan `groups`.
 
 ---
-
 ## B. Tujuan
 Setelah menyelesaikan tugas ini, mahasiswa mampu:
 1. Menjelaskan konsep proses dan user dalam sistem operasi Linux.  
