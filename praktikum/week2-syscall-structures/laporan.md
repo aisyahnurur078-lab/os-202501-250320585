@@ -130,19 +130,21 @@ Sertakan screenshot hasil percobaan atau diagram:
 ---
 
 ## Analisis
-- Jelaskan makna hasil percobaan.  
-- Hubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS).  
-- Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?  
+-Makna hasil percobaan sistem operasi harus diinterpretasikan dengan menghubungkan data yang diamati dengan peran teoretis kernel, fungsi system call, dan arsitektur OS secara keseluruhan. Perbedaan hasil antara lingkungan Linux dan Windows mencerminkan perbedaan mendasar dalam desain arsitektur masing-masing
 
----
+-Hasil percobaan (misalnya, waktu eksekusi program, penggunaan memori, atau latensi I/O) memberikan bukti empiris tentang cara kerja internal sistem operasi.
+>Fungsi Kernel: Kernel adalah inti OS yang mengelola sumber daya perangkat keras (CPU, memori, perangkat I/O) dan menyediakan layanan penting untuk eksekusi proses. Hasil percobaan yang menunjukkan efisiensi dalam manajemen sumber daya (misalnya, penjadwalan CPU yang cepat, alokasi memori yang optimal) mengonfirmasi fungsi utama kernel ini. Jika percobaan melibatkan manajemen memori, hasilnya akan menunjukkan bagaimana kernel menyeimbangkan akses ke memori fisik dan penyimpanan sekunder (swapping).
+>System Call: System call adalah antarmuka terprogram antara aplikasi dan kernel, yang memungkinkan program mengakses layanan OS yang dilindungi (seperti membaca/menulis file, membuat proses baru, atau mengakses jaringan). Hasil percobaan yang mengukur jumlah atau frekuensi system call (misalnya, dalam operasi I/O intensif) secara langsung menunjukkan seberapa sering program beralih dari user mode ke kernel mode. Kinerja yang diamati selama transisi ini memvalidasi teori tentang overhead yang terkait dengan context switch.
+>Arsitektur OS: Arsitektur OS (monolitik, mikrokernel, hibrida) menentukan cara komponen-komponen ini diorganisir. Hasil percobaan akan mencerminkan pilihan arsitektur ini. Misalnya, arsitektur monolitik (seperti Linux) menempatkan sebagian besar layanan dalam ruang kernel untuk kinerja yang lebih cepat, sementara mikrokernel menempatkan layanan di ruang pengguna untuk stabilitas dan modularitas yang lebih baik, meskipun mungkin dengan sedikit kinerja yang lebih rendah karena lebih banyak komunikasi antar-proses (inter-process communication).
+
+-Perbedaan hasil antara Linux dan Windows terlihat pada kustomisasi, arsitektur sistem, kinerja, dan dukungan perangkat keras. Linux lebih fleksibel, memungkinkan kustomisasi mendalam, dan umumnya memiliki kinerja yang lebih cepat, terutama pada perangkat keras lama. Sementara itu, Windows terintegrasi dengan baik untuk penggunaan umum, memiliki dukungan perangkat keras yang lebih luas dari pabrikan, dan struktur sistem yang lebih kohesif. 
+
 
 ## Kesimpulan
 
 1. System call berperan penting sebagai penghubung antara aplikasi dan kernel, memungkinkan program pengguna mengakses layanan inti sistem operasi secara aman tanpa langsung berinteraksi dengan perangkat keras.
 
-
 2. Keamanan dan stabilitas sistem dijaga melalui pemisahan mode pengguna dan mode kernel, sehingga hanya kernel yang memiliki hak penuh untuk mengelola sumber daya sistem.
-
 
 3. Melalui observasi menggunakan perintah seperti strace dan dmesg, dapat dipahami bagaimana proses komunikasi terjadi antara aplikasi, kernel, dan perangkat keras dalam menjalankan operasi sistem.
 
