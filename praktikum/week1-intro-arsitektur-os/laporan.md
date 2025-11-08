@@ -70,11 +70,8 @@ git push origin main
 ---
 
 ## Kode / Perintah
-Tuliskan potongan kode atau perintah utama:
-```bash
-uname -a
-lsmod | head
-dmesg | head
+git config --global user.name "Nama Anda"
+git config --global user.email "email@contoh.com"
 ```
 
 ---
