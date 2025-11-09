@@ -11,10 +11,13 @@ Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 
 ---
 
-## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
+## Tujuan  
 > Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
+> Menghitung waiting time dan turnaround time untuk algoritma FCFS dan SJF.
+> Menyajikan hasil perhitungan dalam tabel yang rapi dan mudah dibaca.
+> Membandingkan performa FCFS dan SJF berdasarkan hasil analisis.
+> Menjelaskan kelebihan dan kekurangan masing-masing algoritma.
+> Menyimpulkan kapan algoritma FCFS atau SJF lebih sesuai digunakan.
 
 ---
 
