@@ -133,8 +133,11 @@ Efisiensi & Kustomisasi	Lebih efisien dan fleksibel untuk modifikasi	Lebih stabi
 
 ## Kesimpulan
 Tuliskan 2–3 poin kesimpulan dari praktikum ini.
+1. Kernel berfungsi sebagai penghubung utama antara aplikasi pengguna dan perangkat keras, sehingga setiap perintah yang dijalankan oleh program akan melewati kernel melalui mekanisme system call.
 
----
+2. System call membuktikan peran penting sistem operasi dalam mengatur akses sumber daya, menjaga keamanan, dan memastikan proses berjalan dengan terkontrol.
+
+3. Perbedaan arsitektur OS (Linux dan Windows) memengaruhi cara kerja system call — Linux lebih terbuka dan transparan, sedangkan Windows lebih tertutup namun fokus pada stabilitas dan keamanan sistem.
 
 ## Quiz
 1. [Pertanyaan 1]  
