@@ -140,14 +140,29 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 3. Perbedaan arsitektur OS (Linux dan Windows) memengaruhi cara kerja system call — Linux lebih terbuka dan transparan, sedangkan Windows lebih tertutup namun fokus pada stabilitas dan keamanan sistem.
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+1. Fungsi dari Proses init atau systemd dalam Sistem Linux
+init atau systemd adalah proses pertama yang dijalankan oleh kernel setelah sistem dinyalakan (PID 1).
+Fungsinya:
+1. Menginisialisasi sistem dan menyiapkan lingkungan kerja (menjalankan skrip startup).
+2. Mengatur dan menjalankan semua layanan (services) serta proses background (daemon).
+3. Memantau dan mengelola proses yang berjalan selama sistem aktif, serta menangani proses anak yang berhenti (zombie).
+Saat ini, sebagian besar distro Linux modern menggunakan systemd karena lebih cepat, efisien, dan mendukung parallel booting.
+2. Perbedaan antara kill dan killall
+Aspek	kill	killall
+Fungsi utama	Mengirim sinyal ke proses tertentu berdasarkan PID (Process ID).	Mengirim sinyal ke semua proses dengan nama tertentu.
+Contoh perintah	kill 1234 → mengakhiri proses dengan PID 1234	killall firefox → mengakhiri semua proses bernama firefox
+Penggunaan umum	Digunakan jika kamu tahu PID dari proses target.	Digunakan jika kamu tahu nama program, bukan PID.
+3. Alasan User root Memiliki Hak Istimewa di Sistem Linux
+root adalah superuser, yaitu pengguna dengan akses penuh terhadap seluruh sistem.
+Hak istimewa ini diperlukan agar root dapat:
 
----
+1. Mengelola sistem secara menyeluruh (menginstal paket, mengubah konfigurasi, membuat/menghapus pengguna).
+
+2. Mengakses dan memodifikasi semua file, termasuk file sistem yang dilindungi.
+
+3. Melakukan operasi administratif seperti mounting, network configuration, atau service control.
+   
+Karena itu, penggunaan akun root harus hati-hati — kesalahan perintah dapat merusak sistem secara permanen.
 
 ## Refleksi Diri
 Tuliskan secara singkat:
