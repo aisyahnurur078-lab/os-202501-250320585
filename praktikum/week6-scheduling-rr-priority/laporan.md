@@ -67,8 +67,14 @@ Kinerja & Keamanan	Lebih efisien dan fleksibel, cocok untuk pengembangan	Lebih s
 
 ## Kesimpulan
 Tuliskan 2–3 poin kesimpulan dari praktikum ini.
+1. Kernel berperan sebagai inti sistem operasi yang mengatur komunikasi antara aplikasi dan perangkat keras melalui mekanisme system call, sehingga proses berjalan aman dan terkontrol.
 
----
+2. System call menjadi jembatan penting antara ruang pengguna dan ruang kernel, membuktikan bahwa setiap aktivitas program selalu melibatkan layanan dari kernel.
+
+3. Perbedaan arsitektur sistem operasi (Linux dan Windows) memengaruhi cara system call dijalankan — Linux lebih terbuka dan efisien, sedangkan Windows lebih tertutup dan berfokus pada stabilitas serta keamanan.
+
+
+
 
 ## Quiz
 1. [Pertanyaan 1]  
