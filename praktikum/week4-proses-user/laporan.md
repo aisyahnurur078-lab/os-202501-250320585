@@ -106,11 +106,30 @@ Sertakan screenshot hasil percobaan atau diagram:
 ---
 
 ## Analisis
-- Jelaskan makna hasil percobaan.  
-- Hubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS).  
-- Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?  
+1. Makna Hasil Percobaan
+Hasil percobaan menunjukkan bagaimana interaksi antara aplikasi, sistem operasi, dan perangkat keras terjadi melalui system call.
+Ketika program dijalankan, proses tersebut tidak berkomunikasi langsung dengan perangkat keras, tetapi melalui kernel.
+Dari hasil percobaan (misalnya menggunakan perintah seperti strace atau dmesg), dapat terlihat bahwa:
+Setiap perintah aplikasi menghasilkan serangkaian system call (seperti open(), read(), write(), close()).
+Kernel bertugas menangani panggilan ini dan mengatur akses sumber daya secara aman dan efisien.
+Artinya, percobaan ini membuktikan bahwa kernel menjadi jembatan utama antara pengguna dan perangkat keras, serta memastikan sistem tetap stabil dan terlindungi dari akses ilegal.
 
----
+2. Hubungan Hasil dengan Teori
+
+Fungsi Kernel: Teori menyebutkan bahwa kernel memiliki peran utama dalam manajemen proses, memori, dan perangkat keras. Hasil percobaan mendukung teori ini karena terlihat kernel selalu menangani permintaan aplikasi melalui system call.
+
+System Call: Dalam teori, system call adalah antarmuka resmi untuk mengakses layanan kernel. Dari hasil percobaan, terlihat bahwa tanpa system call, aplikasi tidak bisa berinteraksi dengan sistem file, jaringan, atau perangkat keras.
+
+Arsitektur OS: Teori arsitektur sistem operasi (monolitik vs mikrokernel) menjelaskan bagaimana system call diimplementasikan. Pada Linux (monolitik), sebagian besar layanan sistem berjalan di kernel mode, sedangkan pada sistem mikrokernel (contoh: Windows dengan model hybrid), sebagian layanan dijalankan di ruang pengguna untuk meningkatkan keamanan dan modularitas.
+
+3. Perbedaan Hasil di Lingkungan OS Berbeda (Linux vs Windows)
+
+Aspek	Linux	Windows
+
+Jenis Kernel	Monolitik	Hybrid (campuran monolitik & mikrokernel)
+Akses System Call	Terbuka, bisa diamati dengan alat seperti strace	Tertutup, perlu alat khusus seperti Process Monitor
+Transparansi Proses	Proses kernel dan system call mudah diamati secara detail	Lebih sulit diamati karena sistem tertutup dan proteksi lebih ketat
+Efisiensi & Kustomisasi	Lebih efisien dan fleksibel untuk modifikasi	Lebih stabil untuk pengguna umum, tapi kurang terbuka untuk pengembangan kernel
 
 ## Kesimpulan
 Tuliskan 2–3 poin kesimpulan dari praktikum ini.
