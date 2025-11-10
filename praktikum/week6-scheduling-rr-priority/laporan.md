@@ -77,14 +77,21 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+1. Perbedaan Utama antara Round Robin dan Priority Scheduling
+Aspek	Round Robin (RR)	Priority Scheduling
+Dasar Penjadwalan	Setiap proses mendapatkan waktu eksekusi bergilir (time quantum) secara bergantian.	Setiap proses dijalankan berdasarkan tingkat prioritas yang telah ditentukan.
+Keadilan (Fairness)	Sangat adil karena semua proses mendapat jatah waktu sama.	Kurang adil karena proses prioritas tinggi bisa terus mendominasi CPU.
+Cocok untuk	Sistem time-sharing dan multitasking interaktif.	Sistem yang membutuhkan penanganan cepat untuk tugas penting.
+Kemungkinan Starvation	Hampir tidak ada, karena setiap proses pasti mendapat giliran.	Dapat terjadi jika proses prioritas rendah terus tertunda.
 
----
+2. Pengaruh Besar/Kecilnya Time Quantum terhadap Performa Sistem
+Time quantum terlalu kecil → proses sering berganti (context switching meningkat), menyebabkan overhead besar dan sistem menjadi kurang efisien.
+Time quantum terlalu besar → proses besar bisa mendominasi CPU terlalu lama, membuat proses lain menunggu terlalu lama dan sistem terasa kurang responsif.
+
+3. Mengapa Algoritma Priority Dapat Menyebabkan Starvation
+Starvation (kelaparan proses) terjadi ketika proses prioritas rendah tidak pernah mendapat giliran CPU karena selalu ada proses dengan prioritas lebih tinggi yang datang lebih dulu.
+Contohnya: jika banyak proses prioritas tinggi terus masuk, proses prioritas rendah akan terus tertunda dan tidak pernah dieksekusi.
+Untuk mengatasi hal ini, digunakan teknik aging, yaitu menaikkan prioritas proses yang menunggu terlalu lama, agar tetap mendapat kesempatan menjalankan CPU.
 
 ## Refleksi Diri
 Tuliskan secara singkat:
