@@ -62,14 +62,26 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
 
----
+1. Sebutkan empat kondisi utama penyebab deadlock
+> Mutual Exclusion – Sumber daya tidak dapat digunakan bersama pada waktu bersamaan.
+> Hold and Wait – Proses memegang satu sumber daya sambil menunggu sumber daya lain.
+> No Preemption – Sumber daya tidak bisa diambil paksa dari proses yang sedang menggunakannya.
+> Circular Wait – Terjadi rantai proses yang saling menunggu sumber daya satu sama lain secara melingkar.
+
+2. Mengapa sinkronisasi diperlukan dalam sistem operasi?
+>Sinkronisasi diperlukan untuk:
+>Menghindari konflik saat beberapa proses mengakses data bersama (race condition).
+>Menjamin konsistensi data dan urutan eksekusi yang benar.
+>Mencegah terjadinya deadlock dan starvation.
+
+3. Jelaskan perbedaan antara semaphore dan monitor
+Aspek	Semaphore	Monitor
+Tipe Mekanisme	Primitive (variabel counter)	Struktur tingkat tinggi (objek sinkronisasi)
+Penggunaan	Menggunakan operasi wait() dan signal()	Menggunakan prosedur dan variabel kondisi
+Kompleksitas	Lebih manual, rawan kesalahan	Lebih mudah dan aman digunakan
+Dukungan Bahasa	Tersedia di hampir semua OS	Biasanya didukung di bahasa tingkat tinggi (Java, C#, dsb.)
+
 
 ## Refleksi Diri
 Tuliskan secara singkat:
