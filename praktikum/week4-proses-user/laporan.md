@@ -1,8 +1,7 @@
 
-# Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
+# Laporan Praktikum Minggu [IV]
+Topik: Manajemen Proses dan User di Linux
 
----
 
 ## Identitas
 - **Nama**  : [Aisyah Nurur Rohmah]  
@@ -23,6 +22,7 @@ Tuliskan tujuan praktikum minggu ini.
 ---
 
 ## Dasar Teori
+
 1. Interaksi Manusia-Komputer (HCI)
 HCI adalah bidang studi yang berfokus pada desain, evaluasi, dan implementasi sistem komputasi interaktif untuk digunakan oleh manusia, serta studi tentang fenomena utama di sekitarnya. 
 Tujuan utama: Memastikan interaksi antara manusia dan komputer seefektif dan seefisien mungkin.
@@ -44,6 +44,7 @@ Kepuasan: Seberapa puas pengguna dengan pengalaman interaksi tersebut?
 Secara ringkas, dasar teori untuk percobaan proses user adalah pemahaman mendalam tentang perilaku manusia, psikologi kognitif dalam interaksi dengan teknologi, dan prinsip-prinsip desain yang berpusat pada pengguna (user-centered design/UCD) untuk menciptakan sistem yang efektif dan memuaskan. 
 ---
 ## Langkah Praktikum
+
 1.Setup Environment
 GLingkungan Pengaturan
 
