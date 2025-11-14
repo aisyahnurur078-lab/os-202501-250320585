@@ -21,9 +21,31 @@ Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
+Berikut dasar teori yang mendasari Penjadwalan CPU – Round Robin (RR) dan Priority Scheduling (3–5 poin):
 
----
+>Round Robin (RR)
+1. Time-sharing system
+RR dikembangkan untuk sistem multiprogramming yang mendukung banyak pengguna sehingga setiap proses mendapat giliran CPU secara adil.
+2. Time Quantum (interval waktu)
+CPU diberikan kepada setiap proses dalam waktu singkat (misal 10–100 ms). Setelah habis, proses di-preempt dan masuk antrean lagi.
+3. Preemptive Scheduling
+RR menjamin tidak ada proses yang mendominasi CPU terlalu lama, sehingga respons time baik dan cocok untuk sistem interaktif.
+4. Fairness
+Semua proses mendapatkan kesempatan yang sama tanpa memandang prioritas.
+5. Pengaruh Time Quantum
+Quantum terlalu kecil → banyak context switching → boros waktu; terlalu besar → menyerupai FCFS, respons jadi lambat.
+
+>Priority Scheduling
+1. CPU dialokasikan berdasarkan prioritas
+Proses dengan prioritas lebih tinggi mendapatkan CPU terlebih dahulu, bisa preemptive atau non-preemptive.
+2. Layanan untuk proses penting
+Cocok untuk sistem real-time yang memerlukan eksekusi cepat sesuai tingkat kepentingan tugas.
+3. Risiko Starvation
+Proses prioritas rendah dapat tidak dapat giliran jika selalu ada proses prioritas tinggi.
+4. Aging
+Teknik untuk menaikkan prioritas proses lama agar mengatasi starvation.
+5. Efisiensi
+Meningkatkan efisiensi sistem dengan menjalankan tugas yang paling penting lebih dulu.
 
 ## Langkah Praktikum
 1. Langkah-langkah yang dilakukan.  
