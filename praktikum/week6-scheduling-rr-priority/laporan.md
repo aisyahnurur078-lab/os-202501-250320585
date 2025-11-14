@@ -11,11 +11,13 @@ Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 
 ---
 
-## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
+## Tujuan 
 > Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
-
+>Menghitung waiting time dan turnaround time pada algoritma RR dan Priority.
+>Menyusun tabel hasil perhitungan dengan benar dan sistematis.
+>Membandingkan performa algoritma RR dan Priority.
+>Menjelaskan pengaruh time quantum dan prioritas terhadap keadilan eksekusi proses.
+>Menarik kesimpulan mengenai efisiensi dan keadilan kedua algoritma.
 ---
 
 ## Dasar Teori
