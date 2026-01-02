@@ -1,6 +1,6 @@
 
 # Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
+Topik: [Penjadwalan CPU – Round Robin (RR) dan Penjadwalan Prioritas"]
 
 ---
 
