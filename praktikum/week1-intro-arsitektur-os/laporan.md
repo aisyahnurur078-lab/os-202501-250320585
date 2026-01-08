@@ -69,10 +69,7 @@ git push origin main
 
 ---
 
-## Kode / Perintah
-git config --global user.name "Nama Anda"
-git config --global user.email "email@contoh.com"
-```
+## Kode / PerintaH
 
 ---
 
