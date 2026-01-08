@@ -1,4 +1,4 @@
-ini
+
 # Laporan Praktikum Minggu [III]
 Manajemen file dan izin linux
 
