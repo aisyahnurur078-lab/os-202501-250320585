@@ -60,12 +60,21 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+1. Mengapa simulasi diperlukan untuk menguji algoritma scheduling?  
+   **Jawaban:**Simulasi diperlukan untuk menguji algoritma *scheduling* karena memungkinkan pengujian yang **aman, terkontrol, dan efisien** tanpa mengganggu sistem nyata, serta memudahkan **perbandingan kinerja** antar algoritma (waktu tunggu, turnaround time, utilisasi CPU).
+
+2.apa perbedaan hasil simulasi dengan perhitungaqn manual jika dataset besar?
+   **Jawaban:** jika dataset besar, perbedaan hasil antara simulasi dan perhitungan manual adalah:
+
+>Simulasi: lebih akurat dan konsisten, mampu menangani data besar dan kompleks tanpa kesalahan manusia.
+
+>Perhitungan manual: tidak efisien, rawan kesalahan, dan sering disederhanakan sehingga hasilnya kurang presisi.j 
+3. algoritma mana yang lebih mudah diimplementasikan ? jelaskan!  
+   **Jawaban:**Algoritma yang **paling mudah diimplementasikan adalah FCFS (First Come First Served)**.
+
+**Penjelasan:**
+FCFS sederhana karena proses dijalankan sesuai urutan kedatangan tanpa perhitungan tambahan seperti prioritas atau *time quantum*. Implementasinya cukup menggunakan **antrian (queue)**, sehingga mudah dipahami, dikodekan, dan dianalisis dibanding algoritma lain seperti SJF, Priority, atau Round Robin.
+  
 
 ---
 
