@@ -12,10 +12,12 @@ Topik: [Simulasi Algoritma Penjadwalan CPU]
 ---
 
 ## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
-
+Tuliskan tujuan praktikum minggu ini:
+>Membuat program simulasi algoritma penjadwalan FCFS dan/atau SJF.
+>Menjalankan program dengan dataset uji yang diberikan atau dibuat sendiri.
+>Menyajikan output simulasi dalam bentuk tabel atau grafik.
+>Menjelaskan hasil simulasi secara tertulis.
+>Mengunggah kode dan laporan ke Git repository dengan rapi dan tepat waktu.
 ---
 
 ## Dasar Teori
