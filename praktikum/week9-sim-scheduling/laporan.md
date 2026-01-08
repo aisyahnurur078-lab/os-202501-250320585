@@ -1,6 +1,6 @@
 
 # Laporan Praktikum Minggu [IX]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
+Topik: [Simulasi Algoritma Penjadwalan CPU]
 
 ---
 
