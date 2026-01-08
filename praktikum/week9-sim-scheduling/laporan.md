@@ -22,6 +22,12 @@ Tuliskan tujuan praktikum minggu ini:
 
 ## Dasar Teori
 Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
+1.CPU Scheduling bertujuan mengatur urutan eksekusi proses agar penggunaan CPU menjadi efisien dan waktu tunggu proses dapat diminimalkan.
+2.FCFS (First Come First Served) mengeksekusi proses berdasarkan urutan kedatangan tanpa mempertimbangkan lama waktu eksekusi.
+3.SJF (Shortest Job First) memilih proses dengan burst time paling kecil sehingga secara teori menghasilkan rata-rata waiting time paling minimum.
+4.Waiting Time dan Turnaround Time merupakan metrik utama untuk mengevaluasi kinerja algoritma penjadwalan CPU.
+5.Algoritma non-preemptive mengeksekusi proses hingga selesai sebelum berpindah ke proses lain, seperti yang diterapkan pada simulasi FCFS dan SJF.
+
 
 ---
 
@@ -58,7 +64,10 @@ Sertakan screenshot hasil percobaan atau diagram:
 
 ## Kesimpulan
 Tuliskan 2–3 poin kesimpulan dari praktikum ini.
-
+1.Trade-off Kinerja: Tidak ada satu algoritma tunggal yang optimal untuk semua situasi. Setiap algoritma memiliki kekuatan dan kelemahannya masing-masing dalam hal kriteria yang berbeda, seperti throughput, waktu tunggu (waiting time), atau waktu penyelesaian (turnaround time) [1].
+2.Pentingnya Burst Time: Algoritma yang mempertimbangkan waktu eksekusi (burst time) tugas, seperti Shortest Job Next (SJN), cenderung memberikan waktu tunggu dan waktu penyelesaian rata-rata yang lebih baik dibandingkan dengan algoritma yang tidak mempertimbangkannya, seperti FCFS [1].
+3.Aging dan Starvation: Simulasi sering menunjukkan masalah "kelaparan" (starvation) pada algoritma berbasis prioritas murni, di mana tugas berprioritas rendah mungkin tidak pernah dieksekusi. Solusi seperti aging (peningkatan prioritas seiring waktu) diperlukan untuk mengatasi masalah ini secara efektif [1].
+4.Responsivitas Round Robin: Algoritma Round Robin (RR) sangat efektif dalam sistem interaktif karena memberikan waktu respons yang cepat dan adil untuk semua proses dengan membagi waktu CPU menjadi irisan waktu (time slice). Namun, kinerjanya sangat bergantung pada ukuran time slice yang dipilih [1]. 
 ---
 
 ## Quiz
