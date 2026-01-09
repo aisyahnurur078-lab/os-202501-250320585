@@ -1,5 +1,5 @@
 
-# Laporan Praktikum Minggu [X]
+# Laporan Praktikum Minggu [XIV]
 Topik: Penyusunan Laporan Praktikum Format IMRRAD
 
 ---
