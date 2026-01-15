@@ -5,8 +5,7 @@ Topik: [Sinkronisasi Proses dan Masalah Deadlock"]
 ---
 
 ## Identitas
-- **Nama**  : [Aisyah Nurur Rohmah]  
-- **NIM**   : [250320585]  
+- **Nama**  : [Aisyah Nurur Rohmah(250320585), Aulia Zahra(250320580), Safyra Azzahro(250320586)  
 - **Kelas** : [1DSRA]
 
 ---
