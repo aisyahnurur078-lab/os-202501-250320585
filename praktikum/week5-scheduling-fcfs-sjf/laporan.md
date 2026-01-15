@@ -79,75 +79,7 @@ Sertakan screenshot hasil percobaan atau diagram:
 
 ## Analisis
 
-1.Perbandingan rata-rata Waiting Time (WT) dan Turnaround Time (TAT) — FCFS vs SJF
-Di bawah ini aku gunakan contoh proses untuk mengilustrasikan perbandingan (non-preemptive):
 
-Proses:
-
-P1: arrival=0, burst=8
-P2: arrival=1, burst=4
-P3: arrival=2, burst=2
-P4: arrival=3, burst=1
-
-> Hasil perhitungan (langkah & rumus singkat)
-
-Rumus:
-Start time: saat CPU mulai mengeksekusi proses.
-Finish time = start + burst.
-WT = start − arrival.
-TAT = finish − arrival.
-
-
-FCFS (First Come First Served) — eksekusi berdasarkan urutan kedatangan
-
-Urutan eksekusi: P1 → P2 → P3 → P4
-Gantt: |P1(0–8)|P2(8–12)|P3(12–14)|P4(14–15)|
-
-Tabel (FCFS):
-
-P1: WT = 0,  TAT = 8
-P2: WT = 7,  TAT = 11
-P3: WT = 10, TAT = 12
-P4: WT = 11, TAT = 12
-
-
-Rata-rata FCFS:
-
-Avg WT = (0 + 7 + 10 + 11) / 4 = 7.0
-Avg TAT = (8 + 11 + 12 + 12) / 4 = 10.75
-
-SJF (Shortest Job First) — non-preemptive, pilih job terpendek dari yang sudah datang
-Urutan eksekusi: P1 → P4 → P3 → P2  (karena setelah P1 selesai pada t=8, P4(1), P3(2) dan P2(4) tersedia — pilih yang burst paling kecil dulu)
-Gantt: |P1(0–8)|P4(8–9)|P3(9–11)|P2(11–15)|
-
-Tabel (SJF):
-
-P1: WT = 0,  TAT = 8
-P4: WT = 5,  TAT = 6
-P3: WT = 7,  TAT = 9
-P2: WT = 10, TAT = 14
-
-Rata-rata SJF:
-
-Avg WT = (0 + 5 + 7 + 10) / 4 = 5.5
-Avg TAT = (8 + 6 + 9 + 14) / 4 = 9.25
-Interpretasi & kapan masing-masing lebih unggul
-
-2.Kapan SJF lebih unggul daripada FCFS
-Bila durasi (burst) proses bervariasi besar dan ada banyak proses pendek → SJF menurunkan rata-rata WT dan TAT (lihat contoh: Avg WT 5.5 vs 7.0).
-Ideal untuk meningkatkan throughput dan mengurangi rata-rata waktu tunggu di sistem batch atau lingkungan non-interaktif.
-Catatan: SJF mengasumsikan tersedia estimasi burst (atau perkiraan) dan dapat menyebabkan starvation pada job panjang.
-Kapan FCFS lebih baik / dipilih daripada SJF
-Bila sederhana dan tidak ingin overhead estimasi (FCFS mudah diimplementasikan).
-Bila urutan kedatangan sudah menguntungkan (mis. proses pendek datang lebih dulu) sehingga SJF tidak memberi keuntungan signifikan.
-Bila keadilan historis lebih penting (FCFS melayani sesuai urutan kedatangan tanpa memfavoritkan job pendek).
-Untuk sistem di mana preemption/estimasi sulit atau tidak tersedia, FCFS lebih aman.
-
-3) Kesimpulan singkat 
-
-1. SJF secara teori/praktik dapat menurunkan rata-rata waiting time dan turnaround time dibanding FCFS ketika ada variasi besar dalam burst time dan estimasi durasi bisa dibuat.
-2. FCFS lebih sederhana dan lebih adil terhadap urutan kedatangan, cocok ketika estimasi burst tidak tersedia atau overhead harus diminimalkan.
-3. Pemilihan algoritma harus menimbang tujuan sistem: optimasi performa (SJF) vs kesederhanaan/keadilan dan rendahnya overhead (FCFS).
 
 ## Kesimpulan
 
